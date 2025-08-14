@@ -1,1 +1,11 @@
-policypulse
+#PolicyPulse – Spot Policy Issues Before They Become Problems#
+
+PolicyPulse is your lightweight, no-nonsense tool for scanning text.
+
+It’s like having a super-fast compliance assistant:
+
+It looks for red flags like sensitive terms, suspicious phrases, or personal information.
+
+It uses both straightforward rules (keywords, regex patterns, PII detection) and a tiny machine learning model for trickier cases.
+
+And it shows everything in a clean web dashboard so you can see exactly how many flags are there
