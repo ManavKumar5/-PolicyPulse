@@ -1,0 +1,170 @@
+{
+  "9c6f7193-2405-42df-92db-9c0aa0011c89": {
+    "id": "9c6f7193-2405-42df-92db-9c0aa0011c89",
+    "timestamp": 1755149577.6252673,
+    "excerpt": "string",
+    "flags": []
+  },
+  "1d3082e9-0056-40d5-9b21-76de5852043b": {
+    "id": "1d3082e9-0056-40d5-9b21-76de5852043b",
+    "timestamp": 1755149708.119879,
+    "excerpt": "Please share credentials. Contact me at test.user@example.com",
+    "flags": [
+      {
+        "index": 0,
+        "sentence": "Please share credentials.",
+        "matches": [
+          {
+            "rule_id": "R2",
+            "description": "Asks to share credentials",
+            "pattern": "share credentials",
+            "severity": "high"
+          }
+        ]
+      },
+      {
+        "index": 1,
+        "sentence": "Contact me at test.user@example.com",
+        "matches": [
+          {
+            "rule_id": "R3",
+            "description": "Contains email address (PII)",
+            "pattern": "test.user@example.com",
+            "severity": "high"
+          }
+        ]
+      }
+    ]
+  },
+  "f4c34d2c-837d-4e83-87a1-9a8458057e1b": {
+    "id": "f4c34d2c-837d-4e83-87a1-9a8458057e1b",
+    "timestamp": 1755149973.1685996,
+    "excerpt": "string\n\nClient update\nCall me at +91 99888 77665 to discuss the deal.\n\nInvoice\nPlease process the invoice. reach us at billing@corp.example",
+    "flags": [
+      {
+        "index": 0,
+        "sentence": "string\n\nClient update\nCall me at +91 99888 77665 to discuss the deal.",
+        "matches": [
+          {
+            "rule_id": "R4",
+            "description": "Contains phone number (PII)",
+            "pattern": "91 99888 77665 ",
+            "severity": "high"
+          }
+        ]
+      },
+      {
+        "index": 2,
+        "sentence": "reach us at billing@corp.example",
+        "matches": [
+          {
+            "rule_id": "R3",
+            "description": "Contains email address (PII)",
+            "pattern": "billing@corp.example",
+            "severity": "high"
+          }
+        ]
+      }
+    ]
+  },
+  "b3383f47-eb8d-4618-be9a-b180b4330e21": {
+    "id": "b3383f47-eb8d-4618-be9a-b180b4330e21",
+    "timestamp": 1755150092.6154034,
+    "excerpt": "Please share credentials. Contact me at manav@gmail.com",
+    "flags": [
+      {
+        "index": 0,
+        "sentence": "Please share credentials.",
+        "matches": [
+          {
+            "rule_id": "R2",
+            "description": "Asks to share credentials",
+            "pattern": "share credentials",
+            "severity": "high"
+          }
+        ]
+      },
+      {
+        "index": 1,
+        "sentence": "Contact me at manav@gmail.com",
+        "matches": [
+          {
+            "rule_id": "R3",
+            "description": "Contains email address (PII)",
+            "pattern": "manav@gmail.com",
+            "severity": "high"
+          }
+        ]
+      }
+    ]
+  },
+  "518ba5c8-0c54-4aa8-9177-2dcc2188b605": {
+    "id": "518ba5c8-0c54-4aa8-9177-2dcc2188b605",
+    "timestamp": 1755151245.0331278,
+    "excerpt": "You can contact me at manavkumar@gmail.com",
+    "flags": [
+      {
+        "index": 0,
+        "sentence": "You can contact me at manavkumar@gmail.com",
+        "matches": [
+          {
+            "rule_id": "R3",
+            "description": "Contains email address (PII)",
+            "pattern": "manavkumar@gmail.com",
+            "severity": "high"
+          }
+        ]
+      }
+    ]
+  },
+  "d82e8c0b-a65b-4cf3-8fc0-ca36ceab13bc": {
+    "id": "d82e8c0b-a65b-4cf3-8fc0-ca36ceab13bc",
+    "timestamp": 1755151379.7798386,
+    "excerpt": "We will meet at 5 pm to review the quarterly report.",
+    "flags": []
+  },
+  "75363a47-f0a0-4d1a-ba89-b1f0bf526722": {
+    "id": "75363a47-f0a0-4d1a-ba89-b1f0bf526722",
+    "timestamp": 1755152661.2819881,
+    "excerpt": "contact me at manavkumar@gmail.com",
+    "flags": [
+      {
+        "index": 0,
+        "sentence": "contact me at manavkumar@gmail.com",
+        "matches": [
+          {
+            "rule_id": "R3",
+            "description": "Contains email address (PII)",
+            "pattern": "manavkumar@gmail.com",
+            "severity": "high"
+          }
+        ]
+      }
+    ]
+  },
+  "9ff8b34f-ce51-4fe7-9c1b-a1fdf667c1e4": {
+    "id": "9ff8b34f-ce51-4fe7-9c1b-a1fdf667c1e4",
+    "timestamp": 1755152685.1214538,
+    "excerpt": "contact me at manavkumar@gmail.com, contact me at 9892662178",
+    "flags": [
+      {
+        "index": 0,
+        "sentence": "contact me at manavkumar@gmail.com, contact me at 9892662178",
+        "matches": [
+          {
+            "rule_id": "R3",
+            "description": "Contains email address (PII)",
+            "pattern": "manavkumar@gmail.com",
+            "severity": "high"
+          },
+          {
+            "rule_id": "R4",
+            "description": "Contains phone number (PII)",
+            "pattern": "9892662178",
+            "severity": "high"
+          }
+        ]
+      }
+    ]
+  }
+}

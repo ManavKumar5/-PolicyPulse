@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>PolicyPulse Dashboard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="/static/css/styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>PolicyPulse – Internal Policy Compliance Checker</h1>
+    </header>
+
+    <main>
+      <section class="controls">
+        <h2>Run a Scan</h2>
+        <label>Text</label>
+        <textarea
+          id="scanText"
+          rows="6"
+          placeholder="Paste text to scan..."
+        ></textarea>
+        <div class="row">
+          <input
+            id="scanUrl"
+            type="text"
+            placeholder="Optional: fetch and scan a URL"
+          />
+          <input
+            id="scanInbox"
+            type="text"
+            placeholder="Optional: mock inbox (e.g., legal, sales)"
+          />
+        </div>
+        <button id="scanBtn">Scan</button>
+        <div id="scanResult" class="status"></div>
+      </section>
+
+      <section class="scans">
+        <h2>Recent Scans</h2>
+        <table id="scansTable">
+          <thead>
+            <tr>
+              <th>Scan ID</th>
+              <th>Flags</th>
+              <th>When</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </section>
+
+      <section class="report" id="reportSection" hidden>
+        <h2>Report</h2>
+        <pre id="reportJson"></pre>
+        <div id="highlighted"></div>
+      </section>
+    </main>
+
+    <footer>
+      <small>Built with Flask + vanilla JS.Free libraries only.</small>
+    </footer>
+
+    <script src="/static/js/app.js"></script>
+  </body>
+</html>

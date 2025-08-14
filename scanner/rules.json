@@ -1,0 +1,44 @@
+[
+  {
+    "id": "R1",
+    "type": "term",
+    "pattern": "confidential",
+    "description": "Mentions 'confidential' content",
+    "severity": "medium"
+  },
+  {
+    "id": "R2",
+    "type": "regex",
+    "pattern": "\\bshare\\s+credentials\\b",
+    "description": "Asks to share credentials",
+    "severity": "high"
+  },
+  {
+    "id": "R3",
+    "type": "pii",
+    "pattern": "EMAIL",
+    "description": "Contains email address (PII)",
+    "severity": "high"
+  },
+  {
+    "id": "R4",
+    "type": "pii",
+    "pattern": "PHONE",
+    "description": "Contains phone number (PII)",
+    "severity": "high"
+  },
+  {
+    "id": "R5",
+    "type": "pii",
+    "pattern": "CREDIT_CARD",
+    "description": "Contains possible credit card number",
+    "severity": "high"
+  },
+  {
+    "id": "R6",
+    "type": "ml",
+    "threshold": 0.65,
+    "description": "ML model thinks this sentence looks risky",
+    "severity": "low"
+  }
+]

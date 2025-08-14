@@ -1,0 +1,10 @@
+{
+    "legal": [
+        {"id": "e1", "subject": "NDA Reminder", "body": "This is confidential. Do not share outside the team."},
+        {"id": "e2", "subject": "Credentials Request", "body": "Kindly share credentials for the staging server."}
+    ],
+    "sales": [
+        {"id": "e3", "subject": "Client update", "body": "Call me at +91 99888 77665 to discuss the deal."},
+        {"id": "e4", "subject": "Invoice", "body": "Please process the invoice. reach us at billing@corp.example"}
+    ]
+}
